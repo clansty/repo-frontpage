@@ -1,0 +1,47 @@
+.package
+  width: 35%
+  max-width: 700px
+  height: 100vh
+  background-color: rgba(255, 255, 255, 0.5)
+  padding: 20px
+  overflow: auto
+  box-sizing: border-box
+  transition: width 0.3s
+  &.noWidth
+    width: 0
+  @media (max-width: 768px)
+    min-width: 100vw
+    transform: translateX(-100vw)
+
+  table
+    tr
+      td
+        line-height: 1.5em
+        &:first-child
+          color: #303133
+          text-align: right
+          min-width: 100px
+          vertical-align: top
+        &:last-child
+          color: #606266
+          word-break: break-word
+        ul
+          list-style-type: none
+          margin-block: 0
+          padding-inline-start: 0
+
+  .close
+    font-size: 1.5em
+    margin-top: -10px
+    margin-left: -10px
+    position: sticky
+    top: 0
+
+    a
+      color: #606266
+      text-decoration: none
+      &:hover
+        color: #303133
+        text-decoration: none
+        background-color: rgba(255, 255, 255, 0.5)
+        backdrop-filter: blur(10px)

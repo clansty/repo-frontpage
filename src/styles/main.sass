@@ -1,0 +1,67 @@
+html, body
+  padding: 0
+  margin: 0
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif
+  background-color: #EDF8F6
+  overflow: hidden
+
+  ::selection
+    background-color: #CF8485
+    color: #eaeaea
+
+a
+  text-decoration: none
+  color: #0F94D2
+  transition: all 0.3s
+
+  &:hover
+    text-decoration: underline
+
+code
+  font-family: Menlo, Monaco, Consolas, "Courier New", monospace
+  white-space: pre-wrap
+
+
+.container
+  position: absolute
+  top: 0
+  bottom: 0
+  left: 0
+  right: 0
+  width: 70vw
+  max-width: 1000px
+  margin: 0 auto
+  display: flex
+  transition: all 0.3s
+  @media (max-width: 900px)
+    width: 100vw
+  &.detailOpen
+    width: 90vw
+    max-width: 1700px
+    .home
+      width: 65%
+    @media (max-width: 1350px)
+      width: 100vw
+    @media (max-width: 768px)
+      .home
+        transform: translateX(-101%)
+        opacity: 0
+
+  h1
+    font-size: 1.7em
+    font-weight: 600
+    color: #303133
+
+  p
+    line-height: 1.3em
+    color: #6B7280
+
+    b
+      font-weight: 600
+      color: #4B5563
+
+    code
+      color: #4B5563
+
+.manjaro
+  color: #33B959

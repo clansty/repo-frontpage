@@ -1,0 +1,31 @@
+name: CI
+on:
+  - push
+  - workflow_dispatch
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v2.4.0
+        with:
+          cache: yarn
+
+      - name: Install deps
+        run: yarn install
+
+      - name: Generate static pages
+        run: yarn export
+
+      - name: Upload COS
+        uses: TencentCloud/cos-action@v1
+        with:
+          secret_id: ${{ secrets.SECRET_ID }}
+          secret_key: ${{ secrets.SECRET_KEY }}
+          cos_bucket: ${{ secrets.BUCKET }}
+          cos_region: ${{ secrets.REGION }}
+          local_path: out
+          remote_path: /
+          clean: true
