@@ -17,7 +17,7 @@ jobs:
         run: yarn install
 
       - name: Generate static pages
-        run: yarn export
+        run: yarn build
 
       - name: Upload COS
         uses: TencentCloud/cos-action@v1
@@ -26,6 +26,6 @@ jobs:
           secret_key: ${{ secrets.SECRET_KEY }}
           cos_bucket: ${{ secrets.BUCKET }}
           cos_region: ${{ secrets.REGION }}
-          local_path: out
+          local_path: dist
           remote_path: /
           clean: true
