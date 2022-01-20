@@ -2,7 +2,7 @@ import React, {useContext, useEffect} from 'react'
 import {Link, useParams} from 'react-router-dom'
 import BuildInfoContext from '../contexts/BuildInfoContext'
 import styles from '../styles/Package.module.sass'
-import {CloseOutlined} from '@ant-design/icons'
+import {CloseOutlined, DownloadOutlined} from '@ant-design/icons'
 import {Package} from '../types/BuildInfo'
 import hSize from '../utils/hSize'
 
@@ -37,6 +37,11 @@ export default () => {
             <CloseButton/>
             <h1>{params.package}</h1>
             <p>{packageInfo.desc}</p>
+            <p>
+                <a href={`https://repo.lwqwq.com/archlinux/pool/${packageInfo.name}-${packageInfo.version}-${params.arch}.pkg.tar.zst`}>
+                    <DownloadOutlined/> Download Package
+                </a>
+            </p>
             <table>
                 <tbody>
                 <tr>
