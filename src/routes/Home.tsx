@@ -21,7 +21,10 @@ export default () => {
         <div className={`container ${location.pathname !== '/' && 'detailOpen'}`}>
             <BuildInfoContext.Provider value={buildInfo}>
                 <div className={styles.home + ' home'}>
-                    <h1>Clansty's Archlinux Repository</h1>
+                    <h1>
+                        <a href="https://clansty.com" style={{color: 'unset'}}>Clansty</a>
+                        's Archlinux Repository
+                    </h1>
                     <p>
                         Welcome to my personal Repository for{' '}
                         <a href="https://archlinux.org/">Arch Linux</a>. Here I provide some
