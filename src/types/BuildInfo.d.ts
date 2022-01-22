@@ -22,4 +22,5 @@ export interface Package {
     conflicts: string[];
     buildTime: string;
     isAur: boolean;
+    filename: string;
 }
