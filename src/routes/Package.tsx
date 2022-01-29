@@ -38,7 +38,7 @@ export default () => {
             <h1>{params.package}</h1>
             <p>{packageInfo.desc}</p>
             <p>
-                <a href={`https://repo.lwqwq.com/archlinux/pool/${packageInfo.filename}`}>
+                <a href={`/archlinux/pool/${packageInfo.filename}`}>
                     <DownloadOutlined/> Download Package
                 </a>
             </p>
