@@ -21,9 +21,9 @@ export default () => {
             <pre><code><span className={styles.section}>[Clansty]</span>{'\n'}
                 <span className={styles.attr}>SigLevel</span> = Never{'\n'}
                 <span className={styles.attr}>Server</span> = https://repo.lwqwq.com/archlinux/<span
-                    className={styles.var}>$arch</span>
+                    className={styles.var}>$arch</span>{'\n'}
                 <span className={styles.attr}>Server</span> = https://pacman.ltd/archlinux/<span
-                    className={styles.var}>$arch</span>
+                    className={styles.var}>$arch</span>{'\n'}
                 <span className={styles.attr}>Server</span> = https://repo.clansty.com/archlinux/<span
                     className={styles.var}>$arch</span>
      </code></pre>
