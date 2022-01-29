@@ -24,7 +24,9 @@ export default () => {
                     className={styles.var}>$arch</span>
                 <span className={styles.attr}>Server</span> = https://pacman.ltd/archlinux/<span
                     className={styles.var}>$arch</span>
-        </code></pre>
+                <span className={styles.attr}>Server</span> = https://repo.clansty.com/archlinux/<span
+                    className={styles.var}>$arch</span>
+     </code></pre>
         </div>
     )
 }
@@ -32,4 +34,5 @@ export default () => {
 const repoText = `[Clansty]
 SigLevel = Never
 Server = https://repo.lwqwq.com/archlinux/$arch
-Server = https://pacman.ltd/archlinux/$arch`
+Server = https://pacman.ltd/archlinux/$arch
+Server = https://repo.clansty.com/archlinux/$arch`
