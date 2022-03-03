@@ -6,12 +6,16 @@ import {Outlet, useLocation} from 'react-router-dom'
 import BuildInfo from '../types/BuildInfo'
 import axios from 'axios'
 import BuildInfoContext from '../contexts/BuildInfoContext'
+import pako from 'pako'
 
 export default () => {
     const [buildInfo, setBuildInfo] = useState<BuildInfo>(undefined)
     useEffect(() => {
-        axios.get('https://archlinux.blob.core.windows.net/repo/build-info.json').then(res => {
-            setBuildInfo(res.data)
+        axios.get('https://archlinux.blob.core.windows.net/repo/build-info.json.gz', {
+            responseType: 'arraybuffer',
+        }).then(res => {
+            const data = pako.inflate(res.data, {to: 'string'})
+            setBuildInfo(JSON.parse(data))
         })
     }, [])
 

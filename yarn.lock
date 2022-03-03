@@ -1648,6 +1648,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"pako@npm:^2.0.4":
+  version: 2.0.4
+  resolution: "pako@npm:2.0.4"
+  checksum: 82b9b0b99dd830c9103856a6dbd10f0cb2c8c32b9768184727ea381a99666de9a47a069d2e6efe6acf09336f363956b50835c196ef9311b34b7274d420eb0d88
+  languageName: node
+  linkType: hard
+
 "path-is-absolute@npm:^1.0.0":
   version: 1.0.1
   resolution: "path-is-absolute@npm:1.0.1"
@@ -1840,6 +1847,7 @@ __metadata:
     "@vitejs/plugin-react": ^1.0.1
     axios: ^0.24.0
     history: ^5.2.0
+    pako: ^2.0.4
     react: ^17.0.2
     react-copy-to-clipboard: ^5.0.4
     react-dom: ^17.0.2
