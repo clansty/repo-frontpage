@@ -55,7 +55,10 @@ export default () => {
                         <a href="https://archlinux32.org/">Arch Linux 32</a>{' '}
                         users, you may set <code>Architecture = pentium4 i686</code> in{' '}
                         <code>/etc/pacman.conf</code>, or pacman will refuse to install packages marked as{' '}
-                        <code>i686</code>, but these packages are compatible with your system.
+                        <code>i686</code>, but these packages are compatible with your system.{' '}
+                        <a href="https://myonlineusb.wordpress.com/2011/06/08/what-is-the-difference-between-i386-i486-i586-i686-i786/">
+                            More about architectures
+                        </a>
                     </p>
                     <p>
                         Note that the environment of <a className="manjaro" href="https://manjaro.org/">Manjaro</a> is
