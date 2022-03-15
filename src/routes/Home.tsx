@@ -47,9 +47,16 @@ export default () => {
                     </p>
                     <p>
                         To use this repository, add these lines to your{' '}
-                        <code>/etc/pacman.conf</code> :
+                        <code>/etc/pacman.conf</code>:
                     </p>
                     <Codeblock/>
+                    <p>
+                        For{' '}
+                        <a href="https://archlinux32.org/">Arch Linux 32</a>{' '}
+                        users, you may set <code>Architecture = pentium4 i686</code> in{' '}
+                        <code>/etc/pacman.conf</code>, or pacman will refuse to install packages marked as{' '}
+                        <code>i686</code>, but these packages are compatible with your system.
+                    </p>
                     <p>
                         Note that the environment of <a className="manjaro" href="https://manjaro.org/">Manjaro</a> is
                         slightly different from Arch Linux, this repository may not completely work on <span
