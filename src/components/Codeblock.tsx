@@ -22,6 +22,8 @@ export default () => {
                 <span className={styles.attr}>SigLevel</span> = Never{'\n'}
                 <span className={styles.attr}>Server</span> = https://repo.nya.fish/archlinux/<span
                     className={styles.var}>$arch</span>{'\n'}
+                <span className={styles.attr}>Server</span> = https://repo.lwqwq.com/archlinux/<span
+                    className={styles.var}>$arch</span>{'\n'}
                 <span className={styles.attr}>Server</span> = https://pacman.ltd/archlinux/<span
                     className={styles.var}>$arch</span>{'\n'}
                 <span className={styles.attr}>Server</span> = https://repo.clansty.com/archlinux/<span
@@ -34,5 +36,6 @@ export default () => {
 const repoText = `[Clansty]
 SigLevel = Never
 Server = https://repo.nya.fish/archlinux/$arch
+Server = https://repo.lwqwq.com/archlinux/$arch
 Server = https://pacman.ltd/archlinux/$arch
 Server = https://repo.clansty.com/archlinux/$arch`
