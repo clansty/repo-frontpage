@@ -33,6 +33,6 @@ export default () => {
 
 const repoText = `[Clansty]
 SigLevel = Never
-Server = https://repo.lwqwq.com/archlinux/$arch
+Server = https://repo.nya.fish/archlinux/$arch
 Server = https://pacman.ltd/archlinux/$arch
 Server = https://repo.clansty.com/archlinux/$arch`
