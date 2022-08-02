@@ -42,8 +42,8 @@ export default () => {
                         collected somewhere else.
                     </p>
                     <p>
-                        This repository support 4 architectures: <b>x86_64</b>, <b>i686</b>, {' '}
-                        <b>aarch64</b> and <b>loongarch64</b>
+                        This repository support 5 architectures: <b>x86_64</b>, <b>i686</b>, {' '}
+                        <b>aarch64</b>, <b>loongarch64</b> and <b>riscv64</b>
                     </p>
                     <p>
                         To use this repository, add these lines to your{' '}

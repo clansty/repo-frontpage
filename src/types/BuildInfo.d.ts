@@ -8,6 +8,7 @@ export interface Packages {
     i686: Package[];
     aarch64: Package[];
     loongarch64: Package[];
+    riscv64: Package[];
 }
 
 export interface Package {
