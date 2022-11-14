@@ -18,7 +18,7 @@ export default ({arch, setArch}: any) => {
              onClick={e => handleClick(e, 'x86_64')}>
             x86_64
         </div>
-        {['i686', 'aarch64', 'loongarch64', 'riscv64'].map(a => (
+        {['i686', 'aarch64', 'riscv64'].map(a => (
             <div className={`${styles.textContainer} ${arch === a && styles.selected}`}
                  onClick={e => handleClick(e, a)} key={a}>
                 {a}
